@@ -423,7 +423,7 @@ dmExtension::Result Platform_AppFinalize(dmExtension::AppParams* params)
 
 dmExtension::Result Platform_Finalize(dmExtension::Params* params)
 {
-    dmLogError("Platform Finalize Called");
+    dmLogInfo("Platform Finalize Called");
     for( int i = 0; i < dmWebView::MAX_NUM_WEBVIEWS; ++i )
     {
         if (g_WebView.m_Used[i]) {
